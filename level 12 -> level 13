@@ -1,0 +1,94 @@
+bandit12@bandit:~$ ls
+data.txt
+bandit12@bandit:~$ mkdir /tmp/moh
+mkdir: cannot create directory ‘/tmp/moh’: File exists
+bandit12@bandit:~$ cp data.txt /tmp/moh
+bandit12@bandit:~$ cd /tmp/moh
+bandit12@bandit:/tmp/moh$ ls
+b.sh  data.txt  p
+bandit12@bandit:/tmp/moh$ file data.txt
+data.txt: ASCII text
+bandit12@bandit:/tmp/moh$ xxd -r data.txt >data
+bandit12@bandit:/tmp/moh$ ls
+b.sh  data  data.txt  p
+bandit12@bandit:/tmp/moh$ file data
+data: gzip compressed data, was "data2.bin", last modified: Tue Oct 14 09:26:06 2025, max compression, from Unix, original size modulo 2^32 564
+bandit12@bandit:/tmp/moh$ mv data data2.gz
+bandit12@bandit:/tmp/moh$ ls
+b.sh  data2.gz  data.txt  p
+bandit12@bandit:/tmp/moh$ file data2
+data2: cannot open `data2' (No such file or directory)
+bandit12@bandit:/tmp/moh$ mv data2 data3.bz
+mv: cannot stat 'data2': No such file or directory
+bandit12@bandit:/tmp/moh$ ls
+b.sh  data2.gz  data.txt  p
+bandit12@bandit:/tmp/moh$ bzip2 -d data3.bz
+bzip2: Can't open input file data3.bz: No such file or directory.
+bandit12@bandit:/tmp/moh$ gzip -d data2.gz
+bandit12@bandit:/tmp/moh$ ls
+b.sh  data2  data.txt  p
+bandit12@bandit:/tmp/moh$ file data2
+data2: bzip2 compressed data, block size = 900k
+bandit12@bandit:/tmp/moh$ mv data2 data3.bz
+bandit12@bandit:/tmp/moh$ ls
+b.sh  data3.bz  data.txt  p
+bandit12@bandit:/tmp/moh$ bzip2 -d data3.bz
+bandit12@bandit:/tmp/moh$ ls
+b.sh  data3  data.txt  p
+bandit12@bandit:/tmp/moh$ file data3
+data3: gzip compressed data, was "data4.bin", last modified: Tue Oct 14 09:26:06 2025, max compression, from Unix, original size modulo 2^32 20480
+bandit12@bandit:/tmp/moh$ mv data3 data4.gz
+bandit12@bandit:/tmp/moh$ ls
+b.sh  data4.gz  data.txt  p
+bandit12@bandit:/tmp/moh$ gzip -d data4.gz
+bandit12@bandit:/tmp/moh$ ls
+b.sh  data4  data.txt  p
+bandit12@bandit:/tmp/moh$ file data4
+data4: POSIX tar archive (GNU)
+bandit12@bandit:/tmp/moh$ mv data4 data5.tar
+bandit12@bandit:/tmp/moh$ ls
+b.sh  data5.tar  data.txt  p
+bandit12@bandit:/tmp/moh$ tar -xf data5.tar
+bandit12@bandit:/tmp/moh$ ls
+b.sh  data5.bin  data5.tar  data.txt  p
+bandit12@bandit:/tmp/moh$ file data5.bin
+data5.bin: POSIX tar archive (GNU)
+bandit12@bandit:/tmp/moh$ mv data5.bin data6.tar
+bandit12@bandit:/tmp/moh$ ls
+b.sh  data5.tar  data6.tar  data.txt  p
+bandit12@bandit:/tmp/moh$ tar -xf data6.tar
+bandit12@bandit:/tmp/moh$ ls
+b.sh  data5.tar  data6.bin  data6.tar  data.txt  p
+bandit12@bandit:/tmp/moh$ file data6.bin
+data6.bin: bzip2 compressed data, block size = 900k
+bandit12@bandit:/tmp/moh$ mv data6.bin data7.bz
+bandit12@bandit:/tmp/moh$ bzip2 -d data7.bz
+bandit12@bandit:/tmp/moh$ ls
+b.sh  data5.tar  data6.tar  data7  data.txt  p
+bandit12@bandit:/tmp/moh$ file data7
+data7: POSIX tar archive (GNU)
+bandit12@bandit:/tmp/moh$ mv data7 data8.tar
+bandit12@bandit:/tmp/moh$ ls
+b.sh  data5.tar  data6.tar  data8.tar  data.txt  p
+bandit12@bandit:/tmp/moh$ file data8.bin
+data8.bin: cannot open `data8.bin' (No such file or directory)
+bandit12@bandit:/tmp/moh$ tar -xf data8.tar
+bandit12@bandit:/tmp/moh$ ls
+b.sh  data5.tar  data6.tar  data8.bin  data8.tar  data.txt  p
+bandit12@bandit:/tmp/moh$ file data8.bin
+data8.bin: gzip compressed data, was "data9.bin", last modified: Tue Oct 14 09:26:06 2025, max compression, from Unix, original size modulo 2^32 49
+bandit12@bandit:/tmp/moh$ mv data8.bin data9.gz
+bandit12@bandit:/tmp/moh$ ls
+b.sh  data5.tar  data6.tar  data8.tar  data9.gz  data.txt  p
+bandit12@bandit:/tmp/moh$ data9 data.txt
+data9: command not found
+bandit12@bandit:/tmp/moh$ gzip -d data9.gz
+bandit12@bandit:/tmp/moh$ ls
+b.sh  data5.tar  data6.tar  data8.tar  data9  data.txt  p
+bandit12@bandit:/tmp/moh$ file data9
+data9: ASCII text
+bandit12@bandit:/tmp/moh$ cat data9
+The password is FO5dwFsc0cbaIiH0h8J2eUks2vdTDwAn
+bandit12@bandit:/tmp/moh$ exit
+logout
+Connection to bandit.labs.overthewire.org closed.
