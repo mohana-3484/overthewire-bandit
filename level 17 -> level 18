@@ -1,0 +1,23 @@
+bandit17@bandit:~$ ls
+passwords.new  passwords.old
+bandit17@bandit:~$ diff passwords.old passwords.new
+42c42
+< BMIOFKM7CRSLI97voLp3TD80NAq5exxk
+---
+> x2gLTTjFwMOhQ8oWNbMN362QKxfRqGlO
+bandit17@bandit:~$ client_loop: send disconnect: Broken pipe
+aishm@DELL:~$  ssh bandit18@bandit.labs.overthewire.org -p 2220 -t "cat /etc/bandit_pass/bandit18"
+                         _                     _ _ _
+                        | |__   __ _ _ __   __| (_) |_
+                        | '_ \ / _` | '_ \ / _` | | __|
+                        | |_) | (_| | | | | (_| | | |_
+                        |_.__/ \__,_|_| |_|\__,_|_|\__|
+
+
+                      This is an OverTheWire game server.
+            More information on http://www.overthewire.org/wargames
+
+backend: gibson-0
+bandit18@bandit.labs.overthewire.org's password:
+x2gLTTjFwMOhQ8oWNbMN362QKxfRqGlO
+Connection to bandit.labs.overthewire.org closed.
