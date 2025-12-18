@@ -1,0 +1,78 @@
+aishm@DELL:~$ rm -rf repo
+aishm@DELL:~$ git clone ssh://bandit31-git@bandit.labs.overthewire.org:2220/home/bandit31-git/repo
+Cloning into 'repo'...
+                         _                     _ _ _
+                        | |__   __ _ _ __   __| (_) |_
+                        | '_ \ / _` | '_ \ / _` | | __|
+                        | |_) | (_| | | | | (_| | | |_
+                        |_.__/ \__,_|_| |_|\__,_|_|\__|
+
+
+                      This is an OverTheWire game server.
+            More information on http://www.overthewire.org/wargames
+
+backend: gibson-0
+bandit31-git@bandit.labs.overthewire.org's password:
+remote: Enumerating objects: 4, done.
+remote: Counting objects: 100% (4/4), done.
+remote: Compressing objects: 100% (3/3), done.
+remote: Total 4 (delta 0), reused 0 (delta 0), pack-reused 0
+Receiving objects: 100% (4/4), done.
+aishm@DELL:~$ cd repo
+aishm@DELL:~/repo$ ls -la
+total 20
+drwxr-xr-x 3 aishm aishm 4096 Dec 18 08:42 .
+drwxr-x--- 7 aishm aishm 4096 Dec 18 08:42 ..
+drwxr-xr-x 8 aishm aishm 4096 Dec 18 08:42 .git
+-rw-r--r-- 1 aishm aishm    6 Dec 18 08:42 .gitignore
+-rw-r--r-- 1 aishm aishm  147 Dec 18 08:42 README.md
+aishm@DELL:~/repo$ cat README.md
+This time your task is to push a file to the remote repository.
+
+Details:
+    File name: key.txt
+    Content: 'May I come in?'
+    Branch: master
+
+aishm@DELL:~/repo$ cat .gitignore
+*.txt
+aishm@DELL:~/repo$ echo "May I come in?" > key.txt
+aishm@DELL:~/repo$ git config user.name "BanditPlayer"
+aishm@DELL:~/repo$ git config user.email "bandit@example.com"
+aishm@DELL:~/repo$ git add -f key.txt
+aishm@DELL:~/repo$ git commit -m "add key"
+[master 59466ae] add key
+ 1 file changed, 1 insertion(+)
+ create mode 100644 key.txt
+aishm@DELL:~/repo$ git push
+                         _                     _ _ _
+                        | |__   __ _ _ __   __| (_) |_
+                        | '_ \ / _` | '_ \ / _` | | __|
+                        | |_) | (_| | | | | (_| | | |_
+                        |_.__/ \__,_|_| |_|\__,_|_|\__|
+
+
+                      This is an OverTheWire game server.
+            More information on http://www.overthewire.org/wargames
+
+backend: gibson-0
+bandit31-git@bandit.labs.overthewire.org's password:
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 323 bytes | 323.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+remote: ### Attempting to validate files... ####
+remote:
+remote: .oOo.oOo.oOo.oOo.oOo.oOo.oOo.oOo.oOo.oOo.
+remote:
+remote: Well done! Here is the password for the next level:
+remote: 3O9RfhqyAlVBEZpVb6LYStshZoqoSx5K
+remote:
+remote: .oOo.oOo.oOo.oOo.oOo.oOo.oOo.oOo.oOo.oOo.
+remote:
+To ssh://bandit.labs.overthewire.org:2220/home/bandit31-git/repo
+ ! [remote rejected] master -> master (pre-receive hook declined)
+error: failed to push some refs to 'ssh://bandit.labs.overthewire.org:2220/home/bandit31-git/repo'
+aishm@DELL:~/repo$
