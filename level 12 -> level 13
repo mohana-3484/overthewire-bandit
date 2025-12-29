@@ -88,7 +88,7 @@ b.sh  data5.tar  data6.tar  data8.tar  data9  data.txt  p
 bandit12@bandit:/tmp/moh$ file data9
 data9: ASCII text
 bandit12@bandit:/tmp/moh$ cat data9
-The password is FO5dwFsc0cbaIiH0h8J2eUks2vdTDwAn
+The password is <REDACTED>
 bandit12@bandit:/tmp/moh$ exit
 logout
 Connection to bandit.labs.overthewire.org closed.
