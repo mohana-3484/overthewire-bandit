@@ -92,3 +92,23 @@ The password is <REDACTED>
 bandit12@bandit:/tmp/moh$ exit
 logout
 Connection to bandit.labs.overthewire.org closed.
+
+
+Conclusion
+connect to the server through a command ssh bandit12@bandit.labs.overthewire.org -p 2220
+the following commands are:
+ls –get me to a file named data.txt
+mkdir /tmp/moh –create a temporary working directory
+cp data.txt /tmp/moh – copy the file to the temporary directory
+cd /tmp/moh –move to the working directory
+file data.txt –check the file type
+xxd -r data.txt > data –convert hex dump back to binary
+file data – identify compression type
+mv – rename files according to compression format
+gzip -d – decompress gzip files
+bzip2 -d –decompress bzip2 files
+tar -xf – extract tar archives
+file <filename> – repeatedly check file types
+cat data9 –read the final decoded file
+The password you are looking for is: <REDACTED>
+exit –to logout.
