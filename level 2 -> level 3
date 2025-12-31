@@ -99,8 +99,16 @@ bandit2@bandit:~$ cat "--spaces in this filename--"
 cat: unrecognized option '--spaces in this filename--'
 Try 'cat --help' for more information.
 bandit2@bandit:~$ cat -- "--spaces in this filename--"
-MNk8KNH3Usiio41PRUEoDFPqfxLPlSmx
+<REDACTED>
 bandit2@bandit:~$ exit -d
 logout
 -bash: exit: -d: numeric argument required
 Connection to bandit.labs.overthewire.org closed.
+
+Conclusion
+connect to the server through a command ssh bandit2@bandit.labs.overthewire.org -p 2220
+the following commands are:
+ls 
+cat -- "--spaces in this filename--" 
+The password you are looking for is: <REDACTED>
+exit
