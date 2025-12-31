@@ -98,3 +98,14 @@ MU4VWeTyJk8ROof1qqmcBPaLh7lDCPvS
 bandit14@bandit:~$ exit
 logout
 Connection to bandit.labs.overthewire.org closed.
+
+Conclusion
+connect to the server through a command chmod 700 private.key
+ssh bandit14@bandit.labs.overthewire.org -p 2220 -i private.key
+the following commands are:
+chmod 700 private.key – set correct permissions for the private SSH key
+ssh -i private.key –connect to the server using key-based authentication
+cat /etc/bandit_pass/bandit14 – read the password
+The password you are looking for is: <REDACTED>
+exit – to logout
+
