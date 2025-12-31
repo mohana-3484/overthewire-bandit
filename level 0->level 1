@@ -18,5 +18,5 @@ connect to the server through a command ssh bandit0@bandit.labs.overthewire.org 
 the following commands are:
 ls - get me to a file named readme
 cat - to read the content of the file readme
-then The password you are looking for is:ZjLjTmM6FvvyRnrb2rfNWOZOTa6ip5If
+then The password you are looking for is:<REDACTED>
 exit
