@@ -1098,7 +1098,7 @@ a8EPDYuGBd3mvar2s0aF5VFdaAY0GbUP
 YGTz538EOOqQztF12JHBHXGPY7yY8jMp
 8MNnqNdEQCk107HPCHvn10HhkUF607u4
 bandit8@bandit:~$ sort data.txt | uniq -u
-4CKMh1JI91bUIZZPXDqGanal4xvAg0JM
+<REDACTED>
 bandit8@bandit:~$ exit
 logout
 Connection to bandit.labs.overthewire.org closed.
