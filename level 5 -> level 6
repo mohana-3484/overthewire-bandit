@@ -123,7 +123,7 @@ find: paths must precede expression: `executable'
 bandit5@bandit:~/inhere$ find . -type f -readable -size 1033c ! -executable
 ./maybehere07/.file2
 bandit5@bandit:~/inhere$ cat maybehere07/.file2
-HWasnPhtq9AVKe0dmk45nxy20cvUa6EG
+<REDACTED>
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         bandit5@bandit:~/inhere$ exit
 logout
 Connection to bandit.labs.overthewire.org closed.
