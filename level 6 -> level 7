@@ -230,7 +230,7 @@ find: ‘/manpage/manpage3-pw’: Permission denied
 find: ‘/dev/mqueue’: Permission denied
 find: ‘/dev/shm’: Permission denied
 bandit6@bandit:~$ cat /var/lib/dpkg/info/bandit7.password
-morbNTDkSW6jIlUc0ymOdMaLnOlFVAaj
+<REDACTED>
 bandit6@bandit:~$ exit
 logout
 Connection to bandit.labs.overthewire.org closed.
