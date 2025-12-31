@@ -10,5 +10,11 @@ aishm@DELL:~$ ssh bandit18@bandit.labs.overthewire.org -p 2220 "cat readme"
             More information on http://www.overthewire.org/wargames
 
 backend: gibson-0
-bandit18@bandit.labs.overthewire.org's password:
-cGWpMaKXVwDUNgPAVJbWYuGHVn9zl3j8
+bandit18@bandit.labs.overthewire.org's password: <REDACTED>
+
+Conclusion
+connect to the server by executing a command directly over ssh without opening an interactive shell
+the following commands are:
+ssh bandit18@bandit.labs.overthewire.org -p 2220 "cat readme" –connect to the server 
+The password you are looking for is: <REDACTED>
+exit
