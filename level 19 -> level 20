@@ -101,7 +101,18 @@ bandit19@bandit:~$ ./bandit20-do
 Run a command as another user.
   Example: ./bandit20-do whoami
 bandit19@bandit:~$ ./bandit20-do cat /etc/bandit_pass/bandit20
-0qXahG8ZjOVMN9Ghs7iOWsCfZyXOUbYO
+<REDACTED>
 bandit19@bandit:~$ exit
 logout
 Connection to bandit.labs.overthewire.org closed.
+
+
+Conclusion
+connect to the server through a command ssh bandit19@bandit.labs.overthewire.org -p 2220
+the following commands are:
+ls 
+file bandit20-do 
+./bandit20-do 
+./bandit20-do cat /etc/bandit_pass/bandit20 
+The password you are looking for is: <REDACTED>
+exit
