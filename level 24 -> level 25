@@ -24,7 +24,7 @@ bandit24@bandit:/tmp/061298$ sort pass.txt | grep -v "Wrong!"
 
 Correct!
 I am the pincode checker for user bandit25. Please enter the password for user bandit24 and the secret pincode on a single line, separated by a space.
-The password of user bandit25 is iCi86ttT4KSNe1armKiwbQNmB3YJP3q4
+The password of user bandit25 is <REDACTED>
 bandit24@bandit:/tmp/061298$ exit
 logout
 Connection to bandit.labs.overthewire.org closed.
