@@ -102,3 +102,13 @@ The password is <REDACTED>
 bandit11@bandit:~$ exit
 logout
 Connection to bandit.labs.overthewire.org closed.
+
+
+Conclusion
+connect to the server through a command ssh bandit11@bandit.labs.overthewire.org -p 2220
+the following commands are:
+ls – get me to a file named data.txt
+cat data.txt –to view the ROT13 encoded content
+cat data.txt | tr abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ nopqrstuvwxyzabcdefghijklmNOPQRSTUVWXYZABCDEFGHIJKLM –to decode ROT13 text and to get the password
+The password you are looking for is: <REDACTED>
+exit –to logout 
