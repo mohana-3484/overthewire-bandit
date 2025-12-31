@@ -12,3 +12,11 @@ bandit0@bandit:~$ exit -d
 logout
 -bash: exit: -d: numeric argument required
 Connection to bandit.labs.overthewire.org closed.
+
+Conclusion
+connect to the server through a command ssh bandit0@bandit.labs.overthewire.org -p 2220
+the following commands are:
+ls - get me to a file named readme
+cat - to read the content of the file readme
+then The password you are looking for is:ZjLjTmM6FvvyRnrb2rfNWOZOTa6ip5If
+exit
