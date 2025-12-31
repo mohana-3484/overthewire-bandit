@@ -102,3 +102,13 @@ The password is <REDACTED>
 bandit10@bandit:~$ exit
 logout
 Connection to bandit.labs.overthewire.org closed.
+
+
+Conclusion
+connect to the server through a command ssh bandit10@bandit.labs.overthewire.org -p 2220
+the following commands are:
+ls – get me to a file named data.txt
+cat data.txt –to view the base64 encoded content
+base64 -d data.txt – to decode the file and reveal the password
+The password you are looking for is: <REDACTED>
+exit – to logout from the server
