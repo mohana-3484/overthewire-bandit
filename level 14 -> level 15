@@ -95,11 +95,20 @@ discord or IRC.
 
 bandit14@bandit:~$ ls
 bandit14@bandit:~$ nc localhost 30000
-MU4VWeTyJk8ROof1qqmcBPaLh7lDCPvS
+<REDACTED>
 Correct!
-8xCjnmgoKbGLhHFAZlGE5Tmu4M2tKJQo
+<REDACTED>
 
 ^C
 bandit14@bandit:~$ exit
 logout
 Connection to bandit.labs.overthewire.org closed.
+
+
+Conclusion
+connect to the server through a command ssh bandit14@bandit.labs.overthewire.org -p 2220
+the following commands are:
+ls – list files
+nc localhost 30000 – send the current password to the local service
+The password you are looking for is: <REDACTED>
+exit – to logout
