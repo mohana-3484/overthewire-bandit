@@ -9024,7 +9024,7 @@ jay's   fBBsNrKcm6ZYqe6rvlQ8NeY2B1E8XrOj
 Cologne's       JzspfZCHm8Wfril1zLbxSGKaGVzX8RrZ
 picket's        HHKJWMQHwajiC7VxRG4LErIUh9ZkaoiO
 bandit7@bandit:~$ grep millionth data.txt
-millionth       dfwvzFQi4mU0wfNbFOe9RoWskMLg7eEc
+millionth       <REDACTED>
 bandit7@bandit:~$ exit
 logout
 Connection to bandit.labs.overthewire.org closed.
