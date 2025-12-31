@@ -32,7 +32,7 @@ bandit23@bandit:/var/spool/bandit24/foo$ chmod 777 certa6.sh
 bandit23@bandit:/var/spool/bandit24/foo$ ls certa6.sh
 certa6.sh
 bandit23@bandit:/var/spool/bandit24/foo$ cat /tmp/certa_test.txt
-gb8KRRCsshuZXI0tUuR6ypOFjiZbf3G8
+<REDACTED>
 bandit23@bandit:/var/spool/bandit24/foo$ exit
 logout
 Connection to bandit.labs.overthewire.org closed.
