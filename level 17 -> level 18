@@ -21,3 +21,15 @@ backend: gibson-0
 bandit18@bandit.labs.overthewire.org's password:
 x2gLTTjFwMOhQ8oWNbMN362QKxfRqGlO
 Connection to bandit.labs.overthewire.org closed.
+
+Conclusion
+comparing the files
+ls
+diff passwords.old passwords.new
+ssh bandit18@bandit.labs.overthewire.org -p 2220 -t "cat /etc/bandit_pass/bandit18"
+the following commands are:
+ls –list files 
+diff passwords.old passwords.new –compare both files and display the changed line
+ssh -t "cat /etc/bandit_pass/bandit18" 
+The password you are looking for is: <REDACTED>
+exit
